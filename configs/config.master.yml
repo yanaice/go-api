@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  read-header-timeout: 10s
+  write-timeout: 10s
+  graceful-shutdown-time: 15s
+mongodb:
+  uri: "mongodb://127.0.0.1:27017"
+  username:
+  password:
+  schema: "petshop"
+redis:
+  host: "127.0.0.1:6379"
+  password:
+  db: 11
+ban-token-guard-threshold: 300
+allow-concurrent-sessions: false
+
+# common config
+env: "local"
+debug: true
+port: 8080
+cors:
+  allow-all: true
+docs:
+  username: "go-start-project"
+  password: "P@ssw0rd"
+jwt:
+  timeout: "24h"
+  refresh-timeout: "48h"
+auth-token-api:
+  base-url: "http://localhost:8080"
+
