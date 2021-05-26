@@ -4,13 +4,14 @@ import (
 	"context"
 	"go-starter-project/internal/app/database"
 	"go-starter-project/pkg/auth"
+
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 type staffDatabaseImpl struct{}
 
-func GetStaffDatabsase() database.StaffDatabase {
+func GetStaffDatabase() database.StaffDatabase {
 	staffDB := &staffDatabaseImpl{}
 	return staffDB
 }

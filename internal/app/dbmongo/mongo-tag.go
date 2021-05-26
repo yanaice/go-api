@@ -5,13 +5,14 @@ import (
 	"errors"
 	"go-starter-project/internal/app/database"
 	"go-starter-project/internal/app/model"
+
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 type tagDatabaseImpl struct{}
 
-func GetTagDatabsase() database.TagDatabase {
+func GetTagDatabase() database.TagDatabase {
 	tagDB := &tagDatabaseImpl{}
 	return tagDB
 }

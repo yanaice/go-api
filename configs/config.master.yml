@@ -4,10 +4,10 @@ server:
   write-timeout: 10s
   graceful-shutdown-time: 15s
 mongodb:
-  uri: "mongodb://127.0.0.1:27017"
+  uri: "mongodb+srv://yana_ice:ijpKzqhgneZrRIAx@cluster0.js0lj.mongodb.net/luckybot?retryWrites=true&w=majority"
   username:
   password:
-  schema: "petshop"
+  schema: "scheduler"
 redis:
   host: "127.0.0.1:6379"
   password:
